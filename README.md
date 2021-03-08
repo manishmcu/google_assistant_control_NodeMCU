@@ -4,4 +4,4 @@ Voice controlled light on off home automation.
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 
-<img src="screenshot.jfif" height=350>
+<img src="screenshot.jfif">
