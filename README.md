@@ -14,3 +14,5 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
 3. Library Mannager 
 
 4. Install Blynk app in your Android Phone
+ 
+5. Change board and Port -> then upload the code to board
