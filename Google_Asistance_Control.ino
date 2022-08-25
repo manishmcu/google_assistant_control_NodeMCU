@@ -9,26 +9,26 @@
 #define Relay3      D3
 #define Relay4      D4
 
-#define WLAN_SSID "Huawei Y9 Prime "    //my SSID
-#define WLAN_PASS "123454321"    // my Password
+#define WLAN_SSID "YOUR_SSID"    //my SSID
+#define WLAN_PASS "YOUR_PASS"    // my Password
 
 /************************ Adafruit.io Setup**********************/
 
-#define AIO_SERVER "io.adafruit.com" // Adafruit Server
-#define AIO_SERVERPORT 1883
-#define AIO_USERNAME  "ManishIOT"
-#define AIO_KEY       "abe308fadd3c4835ab0b0349ca04befb"
+#define IO_SERVER "io.adafruit.com" // Adafruit Server
+#define IO_SERVERPORT 1883
+#define IO_USERNAME  "ManishIOT"
+#define IO_KEY       "aio_bLjj00zQ04jLWgE6HddX8ckeo5Wb"
 
 //WIFI CLIENT
 
 WiFiClient client;
 
-Adafruit_MQTT_Client mqtt(&client, AIO_SERVER,AIO_SERVERPORT,AIO_USERNAME,AIO_KEY);
+Adafruit_MQTT_Client mqtt(&client, IO_SERVER,IO_SERVERPORT,IO_USERNAME,IO_KEY);
 
-Adafruit_MQTT_Subscribe Light1 = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME"/feeds/Relay1");    // Feeds name should be same everywhere
-Adafruit_MQTT_Subscribe Light2 = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME"/feeds/Relay2");
-Adafruit_MQTT_Subscribe Light3 = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME"/feeds/Relay3");
-Adafruit_MQTT_Subscribe Light4 = Adafruit_MQTT_Subscribe(&mqtt, AIO_USERNAME"/feeds/Relay4");
+Adafruit_MQTT_Subscribe Light1 = Adafruit_MQTT_Subscribe(&mqtt, IO_USERNAME"/feeds/Relay1");    // Feeds name should be same everywhere
+Adafruit_MQTT_Subscribe Light2 = Adafruit_MQTT_Subscribe(&mqtt, IO_USERNAME"/feeds/Relay2");
+Adafruit_MQTT_Subscribe Light3 = Adafruit_MQTT_Subscribe(&mqtt, IO_USERNAME"/feeds/Relay3");
+Adafruit_MQTT_Subscribe Light4 = Adafruit_MQTT_Subscribe(&mqtt, IO_USERNAME"/feeds/Relay4");
 
 void MQTT_connect();
 
@@ -127,4 +127,3 @@ while(1);
 }
 Serial.println("MQIT Connected!");
 }
-
