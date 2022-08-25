@@ -17,7 +17,7 @@
 #define IO_SERVER "io.adafruit.com" // Adafruit Server
 #define IO_SERVERPORT 1883
 #define IO_USERNAME  "ManishIOT"
-#define IO_KEY       "aio_bLjj00zQ04jLWgE6HddX8ckeo5Wb"
+#define IO_KEY       "aio_bLjj00zQ04jLWgE6xxxxxxxxxxxx"
 
 //WIFI CLIENT
 
